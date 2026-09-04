@@ -1,0 +1,10 @@
+version: '3.8'
+
+services:
+  tropicalisima-web:
+    build: .
+    container_name: radio_web
+    ports:
+      # Mapea el puerto 8080 de tu computadora al 80 del contenedor
+      - "8080:80"
+    restart: unless-stopped

@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tropicalísima – Sensacional 107.7 FM</title>
+  <link rel="icon" type="jpg" href="img/favicon.png">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Hoja de Estilos -->
+  <link rel="stylesheet" href="css/styles.css?v=9">
+</head>
+<body>
+
+  <!-- ══════════════════════════════════════
+       NAVBAR
+       ══════════════════════════════════════ -->
+  <nav>
+    <div class="logo">
+      <img src="img/logo.jpg" alt="Tropicalísima – Sensacional 107.7 FM">
+    </div>
+    <div class="nav-logo-right">
+      <img src="img/logo-sensacional-nav.png" alt="Sensacional 107.7 FM">
+    </div>
+  </nav>
+
+  <!--
+       PANTALLA PRINCIPAL (ÚNICA SECCIÓN) – carrusel de anunciantes,
+       mismo fondo parallax y desenfoque de siempre, ajustado para
+       ocupar exactamente el alto de la pantalla, sin scroll.
+      -->
+  <section class="hero" id="anunciantes">
+    <div class="anunciantes-bg">
+      <div class="anunciantes-inner">
+        <h2>Anúnciate con Nosotros</h2>
+
+        <div class="carousel-wrapper">
+          <button class="carousel-btn" id="prevBtn">&#8249;</button>
+
+          <div class="carousel-track">
+
+            <!-- ANUNCIANTE 1 -->
+            <div class="carousel-slide active">
+              <div class="anunciante-card">
+                <div class="anunciante-img-wrapper">
+                  <a href="https://www.instagram.com/anunciante1/" target="_blank">
+                    <img src="https://placehold.co/400x300/0036CF/F56A00?text=📸+Instagram" alt="Sabor Tropical">
+                    <div class="ig-badge">📷 Ver en Instagram</div>
+                  </a>
+                </div>
+                <div class="anunciante-info">
+                  <div class="anunciante-categoria">Restaurante</div>
+                  <div class="anunciante-nombre">Sabor Tropical</div>
+                  <div class="anunciante-desc">El mejor sabor caribeño en un solo lugar. Platos tradicionales preparados con los ingredientes más frescos de la región.</div>
+                  <div class="anunciante-ubicacion">📍 Av. Principal, San Cristóbal</div>
+                </div>
+              </div>
+            </div>
+
+            <!-- ANUNCIANTE 2 -->
+            <div class="carousel-slide">
+              <div class="anunciante-card">
+                <div class="anunciante-img-wrapper">
+                  <a href="https://www.instagram.com/anunciante2/" target="_blank">
+                    <img src="https://placehold.co/400x300/F56A00/ffffff?text=📸+Instagram" alt="Moda Élite">
+                    <div class="ig-badge">📷 Ver en Instagram</div>
+                  </a>
+                </div>
+                <div class="anunciante-info">
+                  <div class="anunciante-categoria">Moda & Boutique</div>
+                  <div class="anunciante-nombre">Moda Élite</div>
+                  <div class="anunciante-desc">Ropa y accesorios de última tendencia para toda la familia. Calidad y estilo al mejor precio de la ciudad.</div>
+                  <div class="anunciante-ubicacion">📍 Centro Comercial Sur, Local 14</div>
+                </div>
+              </div>
+            </div>
+
+            <!-- ANUNCIANTE 3 -->
+            <div class="carousel-slide">
+              <div class="anunciante-card">
+                <div class="anunciante-img-wrapper">
+                  <a href="https://www.instagram.com/anunciante3/" target="_blank">
+                    <img src="https://placehold.co/400x300/AD0016/ffffff?text=📸+Instagram" alt="Clínica Vital">
+                    <div class="ig-badge">📷 Ver en Instagram</div>
+                  </a>
+                </div>
+                <div class="anunciante-info">
+                  <div class="anunciante-categoria">Salud & Bienestar</div>
+                  <div class="anunciante-nombre">Clínica Vital</div>
+                  <div class="anunciante-desc">Tu salud es nuestra prioridad. Consultas médicas, exámenes de laboratorio y atención especializada con los mejores profesionales.</div>
+                  <div class="anunciante-ubicacion">📍 Urb. Los Médanos, Calle 5</div>
+                </div>
+              </div>
+            </div>
+
+            <!-- ANUNCIANTE 4 -->
+            <div class="carousel-slide">
+              <div class="anunciante-card">
+                <div class="anunciante-img-wrapper">
+                  <a href="https://www.instagram.com/anunciante4/" target="_blank">
+                    <img src="https://placehold.co/400x300/003080/F56A00?text=📸+Instagram" alt="TechZone">
+                    <div class="ig-badge">📷 Ver en Instagram</div>
+                  </a>
+                </div>
+                <div class="anunciante-info">
+                  <div class="anunciante-categoria">Tecnología</div>
+                  <div class="anunciante-nombre">TechZone</div>
+                  <div class="anunciante-desc">Equipos, repuestos y accesorios tecnológicos. Servicio técnico especializado para celulares, laptops y más. ¡Garantía incluida!</div>
+                  <div class="anunciante-ubicacion">📍 Calle Comercio #22, Planta Alta</div>
+                </div>
+              </div>
+            </div>
+
+            <!-- ANUNCIANTE 5 -->
+            <div class="carousel-slide">
+              <div class="anunciante-card">
+                <div class="anunciante-img-wrapper">
+                  <a href="https://www.instagram.com/anunciante5/" target="_blank">
+                    <img src="https://placehold.co/400x300/1a6600/ffffff?text=📸+Instagram" alt="AgroVerde">
+                    <div class="ig-badge">📷 Ver en Instagram</div>
+                  </a>
+                </div>
+                <div class="anunciante-info">
+                  <div class="anunciante-categoria">Agro & Campo</div>
+                  <div class="anunciante-nombre">AgroVerde</div>
+                  <div class="anunciante-desc">Insumos agrícolas, semillas certificadas y equipos de campo para el productor venezolano. Tu aliado en el agro.</div>
+                  <div class="anunciante-ubicacion">📍 Carretera Nacional Km 12</div>
+                </div>
+              </div>
+            </div>
+
+            <!-- ANUNCIANTE 6 -->
+            <div class="carousel-slide">
+              <div class="anunciante-card">
+                <div class="anunciante-img-wrapper">
+                  <a href="https://www.instagram.com/anunciante6/" target="_blank">
+                    <img src="https://placehold.co/400x300/5c0080/ffffff?text=📸+Instagram" alt="Glamour Studio">
+                    <div class="ig-badge">📷 Ver en Instagram</div>
+                  </a>
+                </div>
+                <div class="anunciante-info">
+                  <div class="anunciante-categoria">Belleza & Spa</div>
+                  <div class="anunciante-nombre">Glamour Studio</div>
+                  <div class="anunciante-desc">Peluquería, manicure, pedicure y tratamientos estéticos de primera. Luce radiante cada día con nuestros expertos en belleza.</div>
+                  <div class="anunciante-ubicacion">📍 Av. Libertador, Local B-7</div>
+                </div>
+              </div>
+            </div>
+
+            <!-- ANUNCIANTE 7 -->
+            <div class="carousel-slide">
+              <div class="anunciante-card">
+                <div class="anunciante-img-wrapper">
+                  <a href="https://www.instagram.com/anunciante7/" target="_blank">
+                    <img src="https://placehold.co/400x300/805500/ffffff?text=📸+Instagram" alt="Construmax">
+                    <div class="ig-badge">📷 Ver en Instagram</div>
+                  </a>
+                </div>
+                <div class="anunciante-info">
+                  <div class="anunciante-categoria">Construcción</div>
+                  <div class="anunciante-nombre">Construmax</div>
+                  <div class="anunciante-desc">Materiales de construcción, ferretería industrial y acabados de alta calidad. Proyectos residenciales y comerciales a tu medida.</div>
+                  <div class="anunciante-ubicacion">📍 Zona Industrial, Galpón 3</div>
+                </div>
+              </div>
+            </div>
+
+            <!-- ANUNCIANTE 8 -->
+            <div class="carousel-slide">
+              <div class="anunciante-card">
+                <div class="anunciante-img-wrapper">
+                  <a href="https://www.instagram.com/anunciante8/" target="_blank">
+                    <img src="https://placehold.co/400x300/006666/ffffff?text=📸+Instagram" alt="ViajesFácil">
+                    <div class="ig-badge">📷 Ver en Instagram</div>
+                  </a>
+                </div>
+                <div class="anunciante-info">
+                  <div class="anunciante-categoria">Viajes & Turismo</div>
+                  <div class="anunciante-nombre">ViajesFácil</div>
+                  <div class="anunciante-desc">Paquetes turísticos, boletos aéreos y nacionales, y planes vacacionales para toda la familia. ¡Viaja más, gasta menos!</div>
+                  <div class="anunciante-ubicacion">📍 Centro de la Ciudad, Piso 2</div>
+                </div>
+              </div>
+            </div>
+
+          </div><!-- /carousel-track -->
+
+          <button class="carousel-btn" id="nextBtn">&#8250;</button>
+        </div>
+
+        <!-- Puntos de navegación (generados por JS) -->
+        <div class="carousel-dots" id="carouselDots"></div>
+
+      </div><!-- /anunciantes-inner -->
+    </div><!-- /anunciantes-bg -->
+  </section>
+
+  <!-- Reproductor flotante (aparece mientras el programa está EN VIVO) -->
+  <div id="floatingPlayerWidget" class="floating-player-widget"></div>
+
+  <!-- Burbujas flotantes: WhatsApp y TikTok (lado izquierdo por defecto) -->
+  <a class="whatsapp-btn" id="whatsappBubble" href="https://wa.me/584247583675" target="_blank" aria-label="Contáctanos por WhatsApp" title="Contáctanos por WhatsApp">
+    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+    </svg>
+  </a>
+
+  <a class="tiktok-btn" id="tiktokBubble" href="https://www.tiktok.com/@tropicalisima" target="_blank" aria-label="Síguenos en TikTok" title="Síguenos en TikTok">
+    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+      <path d="M16.6 5.82c-1.01-.87-1.72-2.09-1.94-3.44a5.85 5.85 0 01-.09-.63H11.6v13.66c0 1.4-1.14 2.55-2.55 2.55a2.55 2.55 0 01-2.55-2.55 2.55 2.55 0 012.55-2.55c.24 0 .47.03.69.1V9.86a6.6 6.6 0 00-.69-.04 6.6 6.6 0 00-6.6 6.6 6.6 6.6 0 006.6 6.6 6.6 6.6 0 006.6-6.6V9.01a9.4 9.4 0 005.49 1.76V7.72a5.8 5.8 0 01-3.05-1.9z"/>
+    </svg>
+  </a>
+
+  <!-- Script Principal -->
+  <script src="js/main.js?v=5"></script>
+
+</body>
+</html>
