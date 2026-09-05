@@ -1230,28 +1230,30 @@ nav ul li a:hover {
 
 /* ================================================================
    AJUSTE FINAL — BURBUJAS SOCIALES SOLO PARA RESPONSIVIDAD MÓVIL
-   Posición 100% fija en píxeles (nada de %, dvh ni transform de
-   centrado) para que la separación entre ambas burbujas y respecto
-   a la navbar sea IDÉNTICA en cualquier teléfono.
+   TikTok y WhatsApp van en fila (lado a lado), a la misma altura,
+   justo debajo de la navbar. Posición 100% fija en píxeles (nada
+   de %, dvh ni transform de centrado) para que se vea igual en
+   cualquier teléfono.
    ================================================================ */
 @media (max-width: 768px) {
   .whatsapp-btn,
   .tiktok-btn {
-    left: 10px;
-    width: 46px;
-    height: 46px;
+    width: 64px;
+    height: 64px;
+    top: 82px; /* 12px de espacio debajo de la navbar (máx. 70px) */
     margin-top: 0;
     transform: none;
   }
 
-  /* TikTok: escaso espacio debajo de la navbar (altura máx. 70px + 8px) */
+  /* TikTok: escaso espacio debajo de la navbar */
   .tiktok-btn {
-    top: 78px;
+    left: 10px;
   }
 
-  /* WhatsApp: separación fija y corta respecto a TikTok, cerca del top */
+  /* WhatsApp: al lado derecho de TikTok, con la misma separación
+     (12px) que hay entre TikTok y la navbar */
   .whatsapp-btn {
-    top: 134px;
+    left: 86px; /* 10px (left tiktok) + 64px (ancho tiktok) + 12px (separación) */
   }
 
   .whatsapp-btn:hover,
@@ -1261,7 +1263,7 @@ nav ul li a:hover {
 
   .whatsapp-btn svg,
   .tiktok-btn svg {
-    width: 22px;
-    height: 22px;
+    width: 32px;
+    height: 32px;
   }
 }
